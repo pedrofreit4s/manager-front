@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  margin-top: 41px;
+  i {
+    font-size: 24px;
+    color: #fc4444;
+    cursor: pointer;
+  }
+  .Right {
+    display: flex;
+    align-items: center;
+  }
+  .Profile {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #e7f0ff;
+    margin-right: 24px;
+  }
+}

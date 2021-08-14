@@ -1,0 +1,58 @@
+@import 'sass/_variables.scss';
+
+.Card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.03);
+  border-radius: 13px;
+  .CardHeader {
+    width: 100%;
+    background: #e9f1ff;
+    border-radius: 13px 13px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    margin-bottom: 5px;
+    h4 {
+      font-weight: 600;
+      color: $title;
+    }
+  }
+  .CardBody {
+    width: 100%;
+    padding: 45px 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: url('../../assets/waves.svg') top;
+    background-size: cover;
+    border-radius: 0px 0px 13px 13px;
+    p {
+      margin-bottom: 10px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 184.5%;
+      text-align: center;
+      color: #ffffff;
+    }
+    button {
+      margin: 0px auto;
+      background: #004bcd;
+      border-radius: 6px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      height: 43px;
+      padding: 0 30px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 184.5%;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'sass/_variables.scss';
+
+.Titlebar {
+  h2 {
+    width: 610px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 132%;
+    color: $title;
+  }
+  p {
+    width: 422px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 184.5%;
+    color: $subtitle;
+  }
+}

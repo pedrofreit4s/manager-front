@@ -1,0 +1,77 @@
+@import 'sass/_variables.scss';
+
+.Container {
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  z-index: 4;
+}
+
+.InformationsCard {
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0px 2px 36px rgba(0, 0, 0, 0.06);
+  border-radius: 13px;
+
+  .CardHeader {
+    width: 100%;
+    background: #e9f1ff;
+    border-radius: 13px 13px 0px 0px;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 184.5%;
+      color: $title;
+    }
+    i {
+      font-size: 30px;
+      color: red;
+      cursor: pointer;
+    }
+  }
+  .CardBody {
+    padding-bottom: 2px;
+    .Cover {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 184.5%;
+      text-align: center;
+      color: $subtitle;
+      background: #eee;
+      margin: 26px 24px;
+      padding: 10px 0;
+      border-radius: 4px;
+    }
+    ul {
+      margin: 20px 24px;
+      list-style: none;
+      li {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 184.5%;
+        color: #525458;
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+        i {
+          font-size: 22px;
+          margin-right: 10px;
+        }
+      }
+      li:first-child {
+        color: $primary;
+      }
+      li:last-child {
+        color: #ba01fb;
+      }
+    }
+  }
+}
