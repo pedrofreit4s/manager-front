@@ -5,7 +5,7 @@ export function getApiClient(ctx?: any) {
   const { 'sirus.session': token } = parseCookies(ctx)
 
   const api = axios.create({
-    baseURL: 'https://b24461cafa37.ngrok.io/v1',
+    baseURL: 'https://f00fb52f6503.ngrok.io/v1',
   })
 
   if (token) {
