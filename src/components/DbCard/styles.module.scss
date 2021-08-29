@@ -1,0 +1,92 @@
+@import 'sass/_variables.scss';
+
+.Card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  .CardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Informations {
+      display: flex;
+      align-items: center;
+      .Icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #f5f6f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          font-size: 32px;
+          color: $primary;
+        }
+      }
+      .Texts {
+        margin-left: 22px;
+        h3 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 132%;
+          color: $title;
+        }
+        p {
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 132%;
+          color: $subtitle;
+          margin-top: 3px;
+        }
+      }
+    }
+    .Options {
+      i {
+        color: $title;
+        font-size: 28px;
+        cursor: pointer;
+      }
+      .OptionsModal {
+        width: 100%;
+        position: absolute;
+        background: #ffffff;
+        box-shadow: 0px 2px 34px 1px rgba(0, 0, 0, 0.06);
+        border-radius: 13px;
+        padding: 24px;
+        li {
+          list-style: none;
+          color: $title;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 132%;
+          margin-bottom: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .CardBody {
+    .LastLogs {
+      margin-top: 25px;
+      background: #f5f6f9;
+      border-radius: 6px;
+      padding: 20px;
+      height: 116px;
+      p {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 166%;
+        color: #263349;
+        span {
+          color: #2bb907;
+        }
+      }
+    }
+  }
+}
+
+.Delete {
+  color: #eb5757 !important;
+}
