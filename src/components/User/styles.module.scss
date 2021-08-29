@@ -1,0 +1,44 @@
+@import 'sass/_variables.scss';
+
+.Card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  .CardProfile {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #e0e8ff;
+  }
+  .Name {
+    h2 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 184.5%;
+      color: $title;
+      text-align: center;
+    }
+  }
+  .CardActions {
+    margin-top: 8px;
+    i {
+      font-size: 24px;
+      color: $primary;
+      margin: 0 7px;
+      &:first-child {
+        color: #ff1818;
+      }
+    }
+  }
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid $primary;
+  }
+}

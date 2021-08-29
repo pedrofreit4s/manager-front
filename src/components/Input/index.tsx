@@ -5,11 +5,14 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   name: string
   label: string
   onChange: any
+  labelBg?: string
 }
-export default function Input({ name, label, onChange, ...rest }: Props) {
+export default function Input({ name, label, labelBg, onChange, ...rest }: Props) {
   return (
     <div className={styles.FormGroup}>
-      <label htmlFor={name}>{label}</label>
+      <label style={{ background: labelBg }} htmlFor={name}>
+        {label}
+      </label>
       <input id={name} onChange={onChange} {...rest} />
     </div>
   )

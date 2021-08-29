@@ -1,0 +1,25 @@
+@import 'sass/_variables.scss';
+
+.Button {
+  button {
+    width: 100%;
+    padding: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 184.5%;
+    color: #ffffff;
+    background: $primary;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: $primaryHover;
+    }
+  }
+  button:disabled,
+  button[disabled] {
+    background: #3c83ff !important;
+    cursor: not-allowed !important;
+  }
+}

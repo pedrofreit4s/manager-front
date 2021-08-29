@@ -1,0 +1,33 @@
+@import 'sass/_variables.scss';
+
+.ModalCover {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(9, 18, 33, 0.38);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .Modal {
+    max-width: 767px;
+    width: 100%;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 14px;
+    .ModalHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        font-size: 40px;
+        color: #dd2929;
+        cursor: pointer;
+      }
+    }
+  }
+}

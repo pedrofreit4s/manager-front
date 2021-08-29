@@ -3,7 +3,11 @@ import { useRouter } from 'next/router'
 import styles from './styles.module.scss'
 import { versionPageRoutes } from 'utils/route'
 
-export default function DbCard() {
+type Props = {
+  hiddenLogs?: boolean
+}
+
+export default function DbCard({ hiddenLogs }: Props) {
   const route = useRouter()
   const optionRef = useRef<HTMLDivElement>(null)
 
@@ -53,13 +57,15 @@ export default function DbCard() {
         </div>
       </div>
       <div className={styles.CardBody}>
-        <div className={styles.LastLogs}>
-          <p>
-            {'>'} starting system on port 3306
-            <br />
-            <span>{'>'} running successfully</span>
-          </p>
-        </div>
+        {!hiddenLogs && (
+          <div className={styles.LastLogs}>
+            <p>
+              {'>'} starting system on port 3306
+              <br />
+              <span>{'>'} running successfully</span>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   )
